@@ -26,6 +26,8 @@ deploy:
   email: d2ltravisdeploy@d2l.com
   skip_cleanup: true
   api_key:
+    # 1f6d......937b
+    secure: oZi6uMxeD9NyO2uyKL6jUGQh7aYp3LZ97TXGUHeAfbx/gPlqxHXTuGiNhjhk4HeLYuWUZMLs9pVqn0XKubA6tsZUcMXMQp1zS/s4ynNI0EibXGmWbAgHNHtYfyqGUYGeYizNcqVxUsErLVcLDEcl8Du3YrHIGtqAEIbMqAywHDcPfkSxpo/P68qejV8taVlrradlRCqMnnPKSKKCAJIruIostG43wC12rCZI6QcsSudKWYuvRLmUCsi7dn74rv4XP3fVW/Gg9xt0s0WRX2XEzaOEiZPvUUbiw1M7YR1T2HEpemyOVqPJ4GiPGNg2OYyOCfNN2FMAX4n6IxVhLLrxasF2MGDUwIINr+9JRVPR0xrqditL+dMg6Is1uUSWsWcmCgGbzDQ6SjVXMIqJP55H6WtsnN86Om+jGOvuV6lziRZG4w4o2fEQqI1hGdm1pBeN67ATKpg9jaBk3zZudgDAG+zdJY3vIVvZJZLw9PFlGiy+hPiGl56IhRAcHkhyc7L2twDlZgcLKYS75+oTZbj9iuhkYPiZH+7niVeOErLFWw74QRFbdamHK39/ZRQKyTqIG2+Hn3BclCZRmXGoZcORewDucHBkjz+DlYkbbz5e6ozNjenCXvPFEABA6VYGPuh/H2HcAYDu9mh8E6m6Il3vwEQk8yErcELg4+pBFzFYfKo=
   on:
     tags: true
     repo: BrightspaceUILabs/carded-table
