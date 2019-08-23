@@ -4,31 +4,47 @@ class CardedTable extends LitElement {
 
 	static get properties() {
 		return {
-			prop1: { type: String },
+			defaultColumns: { type: Boolean, attribute: 'default-columns' }
 		};
 	}
 
 	static get styles() {
 		return css`
 			:host {
-				display: inline-block;
-			}
-			:host([hidden]) {
-				display: none;
+				display: block;
 			}
 		`;
 	}
 
-	constructor() {
-		super();
+	connectedCallback() {
+		super.connectedCallback();
+		if (this.defaultColumns) {
+			const headerElement = this.querySelector('d2l-labs-carded-table-header');
+			if (headerElement) {
+				// convert to array as childNodes returns a NodeList
+				const numColumns = this.querySelectorAll('d2l-labs-carded-table-heading').length;
+				if (numColumns < 1) {
+					return;
+				}
 
-		this.prop1 = 'carded-table';
+				const gridTemplateColumnStyle = `repeat(${numColumns}, 1fr)`;
+				headerElement.style.gridTemplateColumns = gridTemplateColumnStyle;
+
+				const cardElements = [...this.querySelectorAll('d2l-labs-carded-table-card')];
+				if (cardElements) {
+					cardElements.forEach(cardElement => {
+						cardElement.style.gridTemplateColumns = gridTemplateColumnStyle;
+					});
+				}
+			}
+		}
 	}
 
 	render() {
 		return html`
-			<h2>Hello ${this.prop1}!</h2>
+			<slot></slot>
 		`;
 	}
 }
-customElements.define('d2l-labs-carded-table', CardedTable);
+
+window.customElements.define('d2l-labs-carded-table', CardedTable);
