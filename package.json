@@ -1,8 +1,9 @@
 {
-  "name": "<%= packageName %>",
-  "description": "<%= description %>",
-  "repository": "https://github.com/<%= githubOrg %>/<%= shortName %>.git",
-  <%= publishInfo %>,
+  "name": "@brightspace-ui-labs/carded-table",
+  "description": "Carded table component",
+  "repository": "https://github.com/BrightspaceUILabs/carded-table.git",
+  "publishConfig": { "access": "public" },
+  "files": [ "carded-table.js" ],
   "scripts": {
     "lint": "eslint . --ext .js,.html",
     "test": "npm run lint && npm run test:local",
