@@ -2,8 +2,12 @@
   "name": "@brightspace-ui-labs/carded-table",
   "description": "Carded table component",
   "repository": "https://github.com/BrightspaceUILabs/carded-table.git",
-  "publishConfig": { "access": "public" },
-  "files": [ "carded-table.js" ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "carded-table.js"
+  ],
   "scripts": {
     "lint": "eslint . --ext .js,.html",
     "test": "npm run lint && npm run test:local",
@@ -27,6 +31,7 @@
     "mocha": "^6",
     "polymer-cli": "^1",
     "puppeteer": "^1",
+    "resize-observer-polyfill": "^1.5.1",
     "wct-mocha": "^1"
   },
   "dependencies": {
