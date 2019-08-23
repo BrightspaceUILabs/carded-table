@@ -16,15 +16,20 @@ after_success:
 - frauci-update-version -d=skip && export TRAVIS_TAG=$(frauci-get-version)
 env:
   global:
-  - SAUCE_USERNAME: Desire2Learn
   - REPO_NAME=carded-table
   - OWNER_NAME=BrightspaceUILabs
+  - SAUCE_USERNAME: Desire2Learn
+  # SAUCE_ACCESS_KEY
+  - secure: bUjh/iA+C4E7rEVb48XtXLFdSlkVS61SRtXdEZqC8vYZBdaNCJ9PSRNPgwQiQFCoXkS1DpkBAWqhZ72GV67ZRlpX+Ik7WSx1RRkIrsw3ZpuyAYx7zWPOuymGtFSScI7nTZfduy6JFzgxkgRhTAkwI54j+Oae+Hh0m1auL37xSjG5J+d4u+C+dtpRluU2JqKTRvwGJ0MNNCyYZrEjvgwbpsariTRAvnqRYUBd02dK8VdqcPuiG02ABe+tbrrxu2bi+Awqv8C86f26GnGd9NCJ1lHfmcHOZEkxJK8hXPZIcQaWPY0oiQ5tlzz4LyyULh0pTEr9RzB3djzBM9EN5zKDdwN4EU7TNJ6gMLjjMytu76aZQ7Xu4zu6/eTp/7qg/jamdL6dy2Owc/QGvWuo1gRc4k7eUAY0mT2sZpPxjs2lXuW3WZiajYicnKEjfTS/mLNpnZn7ijl0hsn7pvXED/R3tT8GGR6mylsdr0M1Tvq9J1kD7sKM6vdV+VBxyySeJRqtUBYftkkauBopavmEW67QaIdX4ILPWligzA2AEoGUfJtq8RO1a9+ZwV6QzmRBzHg/8T0RxEV7t+65z7RfKqkrduvfRNmS2SszjUErYgmqosasb5P2l2xVxmf6QUhATwfDFX4zDB72n5H17onRqo9ZDkKU32wDNCgT1jJaunEQ4M0=
+  # GITHUB_RELEASE_TOKEN (2d5a......c3a6)
+  - secure: ovAOhFaiOqgntxx2L7pde+rK0yzPFZdNVExm4+PGqIMSJOWMAYgvcqlLvLxH5yWnm4ZGz2OPakua0D/islff5jK3bBbNCozzVwePFdxQgSqY2Bvg5Vx3e1GEX2+s2TEidOqKudMbddsLBWxpGu0coGihcg/BrSG2O/PaOMOXUudhJI9iyIiMxOXZRd66H4Sp23cDF5iSGO3SR88w6n0NL0FnbW+OOZMuP6R8+MIHeIElegOkJ59i63NtvuPLpebbbgzwR7Bfo0GP5MYnhvhobnnagydqzeB1tDK5KJ1ImuRRADrDK27VuHolK4OlSUSXydf0z9cgJgYDS7n8cuCnyVmiYho+0Ys2Hj+/2SjppYeHh/EDy6afB9IjST7rTTrxvrQfWyALo9UBlRJRFA01zKgHfpEWluAKlVrIwRIZkdbaaqxdPGzRpopZK0I7gslxCs9y9tlvZNel6M2Yo9GeJQdyU9BKA1DtZvBsTe7m2nYLhQgZ0sVM0EbvoulbuJSbMJsOiNrBFkGORm8LMEoS0DOL19xk19Oa4YXVtlJeUT/voZshgOECWTq3LpaSg4XsdGbNitseCZnam1dZSCAWWYMA2lJpk1gtSnqX3NwUfAL0PyZepFtYY8jyN8BLREcB/rFJCPS+LbS5vQDyQVST0yP242gWOuOkzvOT2pjOh3o=
 deploy:
-  - provider: npm
-    email: d2ltravisdeploy@d2l.com
-    skip_cleanup: true
-    api_key:
-      # d2l-travis-deploy: ...
-    on:
-      tags: true
-      repo: BrightspaceUILabs/carded-table
+- provider: npm
+  email: d2ltravisdeploy@d2l.com
+  skip_cleanup: true
+  api_key:
+    # 1f6d......937b
+    secure: oZi6uMxeD9NyO2uyKL6jUGQh7aYp3LZ97TXGUHeAfbx/gPlqxHXTuGiNhjhk4HeLYuWUZMLs9pVqn0XKubA6tsZUcMXMQp1zS/s4ynNI0EibXGmWbAgHNHtYfyqGUYGeYizNcqVxUsErLVcLDEcl8Du3YrHIGtqAEIbMqAywHDcPfkSxpo/P68qejV8taVlrradlRCqMnnPKSKKCAJIruIostG43wC12rCZI6QcsSudKWYuvRLmUCsi7dn74rv4XP3fVW/Gg9xt0s0WRX2XEzaOEiZPvUUbiw1M7YR1T2HEpemyOVqPJ4GiPGNg2OYyOCfNN2FMAX4n6IxVhLLrxasF2MGDUwIINr+9JRVPR0xrqditL+dMg6Is1uUSWsWcmCgGbzDQ6SjVXMIqJP55H6WtsnN86Om+jGOvuV6lziRZG4w4o2fEQqI1hGdm1pBeN67ATKpg9jaBk3zZudgDAG+zdJY3vIVvZJZLw9PFlGiy+hPiGl56IhRAcHkhyc7L2twDlZgcLKYS75+oTZbj9iuhkYPiZH+7niVeOErLFWw74QRFbdamHK39/ZRQKyTqIG2+Hn3BclCZRmXGoZcORewDucHBkjz+DlYkbbz5e6ozNjenCXvPFEABA6VYGPuh/H2HcAYDu9mh8E6m6Il3vwEQk8yErcELg4+pBFzFYfKo=
+  on:
+    tags: true
+    repo: BrightspaceUILabs/carded-table
