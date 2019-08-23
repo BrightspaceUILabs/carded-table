@@ -18,10 +18,50 @@ npm install @brightspace-ui-labs/carded-table
 
 ```html
 <script type="module">
-    import '@brightspace-ui-labs/carded-table/carded-table.js';
+	import '@brightspace-ui-labs/carded-table/carded-table-card.js';
+	import '@brightspace-ui-labs/carded-table/carded-table-cards.js';
+	import '@brightspace-ui-labs/carded-table/carded-table-header.js';
+	import '@brightspace-ui-labs/carded-table/carded-table-heading.js';
+	import '@brightspace-ui-labs/carded-table/carded-table.js';
 </script>
-<d2l-labs-carded-table>My element</d2l-labs-carded-table>
+
+<d2l-labs-carded-table default-columns>
+	<d2l-labs-carded-table-header>
+		<d2l-labs-carded-table-heading text="Column 1"></d2l-labs-carded-table-heading>
+		<d2l-labs-carded-table-heading text="Column 2"></d2l-labs-carded-table-heading>
+	</d2l-labs-carded-table-header>
+	<d2l-labs-carded-table-cards>
+		<d2l-labs-carded-table-card>
+			<div>Card 1 Element 1</div>
+			<div>Card 1 Element 2</div>
+		</d2l-labs-carded-table-card>
+		<d2l-labs-carded-table-card>
+			<div>Card 2 Element 1</div>
+			<div>Card 2 Element 2</div>
+		</d2l-labs-carded-table-card>
+	</d2l-labs-carded-table-cards>
+</d2l-labs-carded-table>
 ```
+
+
+ ## Properties & Info
+
+ ### `d2l-labs-carded-table`
+- `default-columns`: Automatically adds `grid-template-column` to the header and card elements, based on the number of headings. Defaults to `1fr` for each column.
+  - e.g., in the demo above,  `grid-template-columns: repeat(2, 1fr)` would be added
+
+ - For custom column sizes, add your own `grid-template-column` to both the `d2l-labs-carded-table-header` and `d2l-labs-carded-table-card` elements.
+  - (See the demo directory for an example)
+
+ ### `d2l-labs-carded-table-header`
+- Wrapper for headings - apply the `grid-template-columns` on this element to line up content in the cards.
+
+ ### `d2l-labs-carded-table-heading`
+- `text`: Sets the text of the heading.
+
+ ### `d2l-labs-carded-table-card`
+- This contains the content that appears in the cards. The number of 'cells' should line up with the number of columns specified.
+
 
 ## Developing, Testing and Contributing
 
