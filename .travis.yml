@@ -19,12 +19,13 @@ env:
   - SAUCE_USERNAME: Desire2Learn
   - REPO_NAME=carded-table
   - OWNER_NAME=BrightspaceUILabs
+  # GITHUB_RELEASE_TOKEN (2d5a......c3a6)
+  - secure: ovAOhFaiOqgntxx2L7pde+rK0yzPFZdNVExm4+PGqIMSJOWMAYgvcqlLvLxH5yWnm4ZGz2OPakua0D/islff5jK3bBbNCozzVwePFdxQgSqY2Bvg5Vx3e1GEX2+s2TEidOqKudMbddsLBWxpGu0coGihcg/BrSG2O/PaOMOXUudhJI9iyIiMxOXZRd66H4Sp23cDF5iSGO3SR88w6n0NL0FnbW+OOZMuP6R8+MIHeIElegOkJ59i63NtvuPLpebbbgzwR7Bfo0GP5MYnhvhobnnagydqzeB1tDK5KJ1ImuRRADrDK27VuHolK4OlSUSXydf0z9cgJgYDS7n8cuCnyVmiYho+0Ys2Hj+/2SjppYeHh/EDy6afB9IjST7rTTrxvrQfWyALo9UBlRJRFA01zKgHfpEWluAKlVrIwRIZkdbaaqxdPGzRpopZK0I7gslxCs9y9tlvZNel6M2Yo9GeJQdyU9BKA1DtZvBsTe7m2nYLhQgZ0sVM0EbvoulbuJSbMJsOiNrBFkGORm8LMEoS0DOL19xk19Oa4YXVtlJeUT/voZshgOECWTq3LpaSg4XsdGbNitseCZnam1dZSCAWWYMA2lJpk1gtSnqX3NwUfAL0PyZepFtYY8jyN8BLREcB/rFJCPS+LbS5vQDyQVST0yP242gWOuOkzvOT2pjOh3o=
 deploy:
-  - provider: npm
-    email: d2ltravisdeploy@d2l.com
-    skip_cleanup: true
-    api_key:
-      # d2l-travis-deploy: ...
-    on:
-      tags: true
-      repo: BrightspaceUILabs/carded-table
+- provider: npm
+  email: d2ltravisdeploy@d2l.com
+  skip_cleanup: true
+  api_key:
+  on:
+    tags: true
+    repo: BrightspaceUILabs/carded-table
