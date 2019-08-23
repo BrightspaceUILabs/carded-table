@@ -8,6 +8,12 @@ export const cardedTableDemoStyles = css`
 		padding-right: 2rem;
 	}
 
+	.table-header[dir=rtl],
+	.table-card[dir=rtl] {
+		padding-left: 2rem;
+		padding-right: 1rem;
+	}
+
 	.table-card-name,
 	.table-card-course-packages,
 	.table-card-learners-enrolled {
@@ -48,6 +54,11 @@ export const cardedTableDemoStyles = css`
 			font-size: 0.65rem;
 			height: 4rem;
 			padding-right: 0.5rem;
+		}
+
+		.table-card[dir=rtl] {
+			padding-left: 0.5rem;
+			padding-right: 1rem;
 		}
 
 		.table-card-image {
