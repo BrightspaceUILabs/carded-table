@@ -48,7 +48,7 @@ npm install @brightspace-ui-labs/carded-table
 
  ### `d2l-labs-carded-table`
 - `default-columns`: Automatically adds `grid-template-column` to the header and card elements, based on the number of headings. Defaults to `1fr` for each column.
-  - e.g., in the demo above,  `grid-template-columns: repeat(2, 1fr)` would be added
+  - e.g., in the demo above,  `grid-template-columns: repeat(2, 1fr)` would be added.
 
  - For custom column sizes, add your own `grid-template-column` to both the `d2l-labs-carded-table-header` and `d2l-labs-carded-table-card` elements.
   - (See the demo directory for an example)
