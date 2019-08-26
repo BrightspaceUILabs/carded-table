@@ -7,6 +7,10 @@
     "access": "public"
   },
   "files": [
+    "carded-table-card.js",
+    "carded-table-cards.js",
+    "carded-table-header.js",
+    "carded-table-heading.js",
     "carded-table.js"
   ],
   "scripts": {
