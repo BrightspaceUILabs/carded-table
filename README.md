@@ -1,6 +1,6 @@
 # d2l-labs-carded-table
 
-[![NPM version](https://img.shields.io/npm/v/@brightspace-ui-labs/carded-table/carded-table.svg)](https://www.npmjs.org/package/@brightspace-ui-labs/carded-table/carded-table)
+[![NPM version](https://img.shields.io/npm/v/@brightspace-ui-labs/carded-table/carded-table.svg)](https://www.npmjs.org/package/@brightspace-ui-labs/carded-table)
 [![Greenkeeper badge](https://badges.greenkeeper.io/BrightspaceUILabs/carded-table.svg)](https://greenkeeper.io/)
 [![Build status][ci-image]][ci-url]
 
