@@ -57,10 +57,10 @@ class CardedTableCourseDemo extends CardedTableDemoMixin(LitElement) {
 		return html`
 			<d2l-labs-carded-table>
 				<d2l-labs-carded-table-header class="table-header">
-					<d2l-labs-carded-table-heading text="Course"></d2l-labs-carded-table-heading>
+					<d2l-labs-carded-table-heading>Course</d2l-labs-carded-table-heading>
 					<d2l-labs-carded-table-heading></d2l-labs-carded-table-heading>
-					<d2l-labs-carded-table-heading text="Course Packages"></d2l-labs-carded-table-heading>
-					<d2l-labs-carded-table-heading text="Learners Enrolled"></d2l-labs-carded-table-heading>
+					<d2l-labs-carded-table-heading>Course Packages</d2l-labs-carded-table-heading>
+					<d2l-labs-carded-table-heading>Learners Enrolled</d2l-labs-carded-table-heading>
 					<d2l-labs-carded-table-heading></d2l-labs-carded-table-heading>
 				</d2l-labs-carded-table-header>
 				<d2l-labs-carded-table-cards>

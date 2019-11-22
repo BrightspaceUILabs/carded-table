@@ -41,8 +41,8 @@ npm install @brightspace-ui-labs/carded-table
 
 <d2l-labs-carded-table default-columns>
 	<d2l-labs-carded-table-header>
-		<d2l-labs-carded-table-heading text="Column 1"></d2l-labs-carded-table-heading>
-		<d2l-labs-carded-table-heading text="Column 2"></d2l-labs-carded-table-heading>
+		<d2l-labs-carded-table-heading>Column 1</d2l-labs-carded-table-heading>
+		<d2l-labs-carded-table-heading>Column 2</d2l-labs-carded-table-heading>
 	</d2l-labs-carded-table-header>
 	<d2l-labs-carded-table-cards>
 		<d2l-labs-carded-table-card>
@@ -71,7 +71,7 @@ npm install @brightspace-ui-labs/carded-table
 - Wrapper for headings - apply the `grid-template-columns` on this element to line up content in the cards.
 
  ### `d2l-labs-carded-table-heading`
-- `text`: Sets the text of the heading.
+- This contains the content of the heading.
 
  ### `d2l-labs-carded-table-card`
 - This contains the content that appears in the cards. The number of 'cells' should line up with the number of columns specified.
