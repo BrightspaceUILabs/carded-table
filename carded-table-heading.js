@@ -18,7 +18,7 @@ class CardedTableHeading extends LitElement {
 
 	render() {
 		return html`
-			${this.text}
+			<slot></slot>
 		`;
 	}
 }
