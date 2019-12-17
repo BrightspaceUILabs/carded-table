@@ -17,10 +17,12 @@ class CardedTableCard extends LitElement {
 				height: 3rem;
 				margin-bottom: 0.25rem;
 				max-width: 100%;
+				outline: none;
 				padding: 0 1rem;
 			}
 
-			:host(:hover) {
+			:host(:hover),
+			:host(:focus) {
 				border: 0.1rem solid var(--d2l-color-primary-accent-action);
 				margin: -0.05rem;
 				margin-bottom: 0.20rem;
