@@ -8,17 +8,17 @@ export const CardedTableDemoMixin = superclass => class extends superclass {
 		};
 	}
 
-	firstUpdated() {
-		super.firstUpdated();
-		this.__startObserver();
-	}
-
 	disconnectedCallback() {
 		super.disconnectedCallback();
 		if (this.__resizeObserver) {
 			this.__resizeObserver.disconnect();
 			this.__resizeObserver = null;
 		}
+	}
+
+	firstUpdated() {
+		super.firstUpdated();
+		this.__startObserver();
 	}
 
 	__startObserver() {
