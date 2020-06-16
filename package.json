@@ -35,7 +35,7 @@
     "frau-ci": "^1",
     "mocha": "^7.0.1",
     "polymer-cli": "^1",
-    "puppeteer": "^3.0.4",
+    "puppeteer": "^4.0.0",
     "resize-observer-polyfill": "^1",
     "wct-mocha": "^1"
   },
