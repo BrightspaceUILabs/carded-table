@@ -1,6 +1,6 @@
 {
   "name": "@brightspace-ui-labs/carded-table",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Carded table component",
   "repository": "https://github.com/BrightspaceUILabs/carded-table.git",
   "publishConfig": {
