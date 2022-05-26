@@ -1,5 +1,5 @@
 import '@brightspace-ui/core/components/colors/colors.js';
-import { css, html, LitElement } from 'lit-element/lit-element.js';
+import { css, html, LitElement } from 'lit';
 
 class CardedTableCard extends LitElement {
 

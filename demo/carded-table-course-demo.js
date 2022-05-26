@@ -6,7 +6,7 @@ import '../carded-table-header.js';
 import '../carded-table-heading.js';
 import '../carded-table.js';
 
-import { css, html, LitElement } from 'lit-element/lit-element.js';
+import { css, html, LitElement } from 'lit';
 import { CardedTableDemoMixin } from './carded-table-demo-mixin.js';
 import { cardedTableDemoStyles } from './carded-table-demo-styles.js';
 import { courseData } from './demo-data.js';
