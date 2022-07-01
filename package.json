@@ -37,7 +37,7 @@
     "eslint-plugin-sort-class-members": "^1",
     "mocha": "^7.0.1",
     "polymer-cli": "^1",
-    "puppeteer": "^5.3.1",
+    "puppeteer": "^15.3.0",
     "resize-observer-polyfill": "^1",
     "wct-mocha": "^1"
   },
