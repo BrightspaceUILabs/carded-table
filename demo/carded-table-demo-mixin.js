@@ -1,5 +1,3 @@
-import ResizeObserver from 'resize-observer-polyfill/dist/ResizeObserver.es.js';
-
 export const CardedTableDemoMixin = superclass => class extends superclass {
 	static get properties() {
 		return {
